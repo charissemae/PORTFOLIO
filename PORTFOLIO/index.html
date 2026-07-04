@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charisse Mae Mendoza | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Drifting firefly layer (populated by JS) -->
+  <div class="firefly-field" id="fireflyField" aria-hidden="true"></div>
+
+  <!-- Ambient magical background music (file lives in assets/audio) -->
+  <audio id="bgMusic" src="assets/audio/enchanted-ambience.wav" loop preload="auto"></audio>
+  <button class="music-toggle" id="musicToggle" aria-label="Play magical background music" aria-pressed="false">
+    <span class="music-icon">♪</span>
+  </button>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="seal-logo">
+      <span class="seal-ring"></span>
+      <span class="seal-initials">CM</span>
+    </a>
+    <!-- Nav links are generated dynamically in script.js -->
+    <nav>
+      <ul class="nav-links" id="navLinks"></ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">✦ a tale still being written ✦</p>
+        <h1 class="hero-name">Charisse Mae<br>Mendoza</h1>
+        <p class="hero-title">BS Information Technology Student</p>
+        <p class="hero-intro">
+          Passionate about programming, web development, and continuously
+          learning new technologies.
+        </p>
+        <button class="btn-primary" id="scrollToContact">Send a Raven ✦</button>
+      </div>
+      <div class="hero-sigil">
+        <div class="sigil-wrap">
+          <div class="sigil-ring outer" aria-hidden="true"></div>
+          <div class="sigil-ring inner" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="assets/images/profile.jpg" alt="Portrait of Charisse Mae Mendoza" class="portrait-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vine-divider" aria-hidden="true">
+      <svg viewBox="0 0 400 24" preserveAspectRatio="none"><path d="M0 12 Q 50 2, 100 12 T 200 12 T 300 12 T 400 12" /></svg>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ME ================= -->
+  <section class="about" id="about">
+    <p class="section-eyebrow">Chapter I</p>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="about-panel glass">
+      <div class="about-sigil" aria-hidden="true">
+        <div class="sigil-hex"><span>CM</span></div>
+      </div>
+      <p class="about-text">
+        Hi! I'm Charisse Mae Mendoza, a Bachelor of Science in Information
+        Technology student. I enjoy learning about programming and web
+        development, especially creating websites and solving coding
+        challenges. I'm currently improving my skills in HTML, CSS,
+        JavaScript, and Java while working on school projects. My goal is
+        to become a skilled software or web developer and continue
+        learning new technologies.
+      </p>
+    </div>
+    <div class="vine-divider" aria-hidden="true">
+      <svg viewBox="0 0 400 24" preserveAspectRatio="none"><path d="M0 12 Q 50 22, 100 12 T 200 12 T 300 12 T 400 12" /></svg>
+    </div>
+  </section>
+
+  <!-- ================= HOBBIES ================= -->
+  <section class="hobbies" id="hobbies">
+    <p class="section-eyebrow">Chapter II</p>
+    <h2 class="section-title">Pages From My Grimoire</h2>
+    <!-- Hobby entries are generated dynamically in script.js -->
+    <div class="hobbies-list" id="hobbiesGrid"></div>
+    <div class="vine-divider" aria-hidden="true">
+      <svg viewBox="0 0 400 24" preserveAspectRatio="none"><path d="M0 12 Q 50 2, 100 12 T 200 12 T 300 12 T 400 12" /></svg>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <p class="section-eyebrow">Chapter III</p>
+    <h2 class="section-title">Send Word to Me</h2>
+    <p class="contact-sub">Choose a messenger, and your word shall reach me.</p>
+    <!-- Contact entries are generated dynamically in script.js -->
+    <div class="contact-list" id="contactGrid"></div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <span class="footer-flourish" aria-hidden="true">✦ ⋆ ✦</span>
+    <p>&copy; 2026 Charisse Mae Mendoza. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
